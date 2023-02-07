@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/coursetoolbar"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/course_text_view"
+        android:layout_width="292dp"
+        android:layout_height="57dp"
+        android:text="@string/course_text_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <TextView
+        android:id="@+id/coursetotalfees_text_view"
+        android:layout_width="288dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/coursetotalfees_text_view"
+        app:layout_constraintEnd_toEndOf="@+id/course_text_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/course_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/course_text_view" />
+
+    <ScrollView
+        android:id="@+id/courseList_scroll"
+        android:layout_width="270dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="24dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="@+id/coursetotalfees_text_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/coursetotalfees_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/coursetotalfees_text_view">
+
+        <TextView
+            android:id="@+id/courseList_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/courseList_text_view" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/coursetotalfees_button"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/coursetotalfees_button"
+        app:layout_constraintEnd_toEndOf="@+id/courseList_scroll"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/courseList_scroll"
+        app:layout_constraintTop_toBottomOf="@+id/courseList_scroll" />
+    <LinearLayout
+    android:id="@+id/layoutCourse_action"
+    android:layout_width="330dp"
+    android:layout_height="57dp"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="@+id/coursetotalfees_button"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/coursetotalfees_button"
+    app:layout_constraintTop_toBottomOf="@+id/coursetotalfees_button">
+
+        <Button
+            android:id="@+id/coursenext_button"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="@string/coursenext_button" />
+
+        <Button
+            android:id="@+id/course_visit_button"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="COURSE LINK" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutCourse_service"
+        android:layout_width="364dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/layoutCourse_action"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/layoutCourse_action"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCourse_action">
+
+        <Button
+            android:id="@+id/course_detail_button"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:text="@string/course_detail_button" />
+
+        <Button
+            android:id="@+id/course_startService_button"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:text="@string/course_startService_button" />
+
+        <Button
+            android:id="@+id/course_stopService_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/course_stopService_button" />
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

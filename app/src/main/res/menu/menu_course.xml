@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/courseoptionitem1"
+        android:title="Item1"
+        android:icon="@drawable/add_icon"
+       app:showAsAction="always" />
+    <item
+        android:id="@+id/courseoptionitem2"
+        android:title="Item2"
+        android:icon="@drawable/build_icon"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/courseoptionitem3"
+        android:title="Item3"
+        android:icon="@drawable/wifi_icon"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/courseoptionitem4"
+        android:title="Item4"
+        android:icon="@drawable/waving_icon"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/courseoptionitem5"
+        android:title="Item5" />
+</menu>

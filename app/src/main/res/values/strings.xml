@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CourseProject</string>
+    <string name="course_text_view"></string>
+    <string name="courseList_text_view"></string>
+    <string name="coursetotalfees_text_view"></string>
+    <string name="coursetotalfees_button">Total Cost Fees</string>
+    <string name="coursenext_button"> Next Course</string>
+    <string name="course_no_edit_text">Enter Course No</string>
+    <string name="course_name_edit_text">Enter Course Name</string>
+    <string name="course_max_enrl_edit_text">Enter Course Max Enrl</string>
+    <string name="course_credit_edit_text">Enter Course Credits</string>
+    <string name="update_course_button">COURSE UPDATE</string>
+    <string name="course_detail_button">COURSE DETAILS</string>
+    <string name="course_startService_button">START SERVICE</string>
+    <string name="course_stopService_button">STOP SERVICE</string>
+    <string name="course_visit_button">COURSE LINK</string>
+    <string name="title_activity_course_maps">CourseMapsActivity</string>
+
+
+</resources>
